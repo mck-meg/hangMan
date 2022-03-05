@@ -1,0 +1,135 @@
+.wrapper {
+    display: flexbox;
+    content: "";
+    clear: both;
+    width:100%;
+    margin:0 auto;
+}
+
+body {
+    background: grey;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    color: white;
+    height: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+
+h1, h2, h3 {
+	font-weight: 100;
+	text-transform: uppercase;
+    margin:5px 0; 
+}
+
+p{
+    font-size: 1.6em;
+}
+
+#alphabet {
+    content: "";
+    display: table;
+    clear: both;
+    margin:15px auto;
+    padding:0;
+    max-width:900px;
+  }
+  
+  #alphabet li {
+    float:left;
+    margin: 0 10px 10px 0;
+    list-style:none;
+    width:35px;
+    height:30px;
+    padding-top:10px;
+    background: white;
+    color: #82d2e5;
+    cursor:pointer;
+    /*@include corners(5px);*/
+    border: solid 1px white;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+    -khtml-border-radius: 5px;
+  }
+
+  #alphabet li :hover{
+    background: lightblue;
+    border: solid 1px white;
+    color: white;
+  }
+
+  #my-word {
+    margin: 0;
+    display: block;
+    padding: 0;
+    display:block;
+  }
+  
+  #my-word li {
+    position: relative;
+    list-style: none;
+    margin: 0;
+    display: inline-block;
+    padding: 0 10px;
+    font-size:1.6em;
+  }
+
+  .active {
+    -moz-transition: all 1s ease-in;
+    -moz-transition:all 0.3s ease-in-out;
+    transition:all 0.3s ease-in-out;
+    opacity:0.4;
+    filter:alpha(opacity=40); 
+    cursor:default;
+  }
+
+  .active:hover {
+    -moz-transition: all 1s ease-in;
+    -moz-transition:all 0.3s ease-in-out;
+    transition:all 0.3s ease-in-out;
+    opacity:0.4;
+    filter:alpha(opacity=40);
+  }
+
+  #mylives{
+    font-size:1.6em;
+    text-align:center;
+    display:block;
+  }
+
+  button{
+    background: #82d2e5;
+    color: white;
+    border: solid 1px white;
+    text-decoration:none;
+    cursor:pointer;
+    font-size:1.2em;
+    padding:18px 10px;
+    width:180px;
+    margin: 10px;
+    outline: none; 
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+    -khtml-border-radius: 5px;
+  }
+
+  button:hover {
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background: white;
+    border: solid 1px white;
+    color: blue;
+  }
+
+  @media (max-width: 767px) {
+    #alphabet {
+    padding:0 0 0 15px;
+  }
+}
+
+@media (max-width: 480px) {
+        #alphabet {
+        padding:0 0 0 25px;
+  }
+}
